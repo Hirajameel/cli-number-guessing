@@ -7,12 +7,12 @@ const randomNumber = Math.floor(Math.random() * 10 + 1);
 console.log(randomNumber);
 const answers = await inquirer.prompt([
     {
-        name: "userGuessedrNumber",
+        name: "userGuessedNumber",
         type: "number",
         message: "please guess a number between 1-6:",
     },
 ]);
-if (answers.userGuessedrNumber === randomNumber) {
+if (answers.userGuessedNumber === randomNumber) {
     console.log("congratulation! you gussed right number.");
 }
 else {
